@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Personal Food planer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="Title">
+    <div class="container-fluid glass">
+      <div class="row ">
+        <div class="col-lg-6 space">
+          <img class="pictures" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="col-lg-6 ">
+          <h1>Your Meal searching app</h1>
+          <form class="hehe" action="/" method="post">
+            <label for="exampleFormControlInput2 space1" class="form-label">Craving for a meal , search what you want to eat</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com "name="query">
+            <label class="form-label space1">Select a diet type</label>
+            <select class="form-select " aria-label="Default select example" name="diet">
+              <option selected value=null>Null</option>
+              <option value="balanced">balanced</option>
+              <option value="high-fiber">high-fiber</option>
+              <option value="high-protein">high-protein</option>
+              <option value="low-carb">low-carb</option>
+              <option value="low-fat">low-fat</option>
+              <option value="low-sodium">low-sodium</option>
+            </select>
+            <label class="form-label space1">Preferences</label>
+            <select class="form-select" aria-label="Default select example" name="health">
+              <option selected>Open this select menu</option>
+              <option value="alcohol-free">alcohol-free</option>
+              <option value="celery-free">celery-free</option>
+              <option value="crustacean-free">crustacean-free</option>
+              <option value="egg-free">egg-free</option>
+              <option value="fish-free">fish-free</option>
+              <option value="fodmap-free">fodmap-free</option>
+              <option value="gluten-free">gluten-free</option>
+              <option value="immuno-supportive">immuno-supportive</option>
+              <option value="keto-friendly">keto-friendly</option>
+              <option value="kidney-friendly">kidney-friendly</option>
+              <option value="kosher">kosher</option>
+              <option value="lupine-free">lupine-free</option>
+              <option value="no-oil-added">no-oil-added</option>
+              <option value="pork-free">pork-free</option>
+              <option value="red-meat-free">red-meat-free</option>
+              <option value="vegan">vegan</option>
+              <option value="vegeterian">vegeterian</option>
+            </select>
+            <label class="form-label space1">Select the typye of cuisine</label>
+            <select class="form-select" aria-label="Default select example" name="cuisine">
+              <option selected>Open this select menu</option>
+              <option value="American">American</option>
+              <option value="Asian">Asian</option>
+              <option value="British">British</option>
+              <option value="Caribbean">Caribbean</option>
+              <option value="Central Europe">Central Europe</option>
+              <option value="French">French</option>
+              <option value="Indian">Indian</option>
+              <option value="Italian">Italian</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Mexican">Mexican</option>
+              <option value="Middle Eastern">Middle Eastern</option>
+              <option value="Nordic">Nordic</option>
+              <option value="South American">South American</option>
+              <option value="South East Asian">South East Asian</option>
+            </select>
+            <label for="customRange3 " class="form-label">Example range</label>
+            <input type="range" class="form-range" min="0" max="5" step="0.5" name="calories" id="customRange3">
+            <button class="btn btn-lg btn-dark" type="submit" name="button">submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

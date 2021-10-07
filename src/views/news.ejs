@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Node.js News</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class='Title'>
+    <div class="container">
+      <div class="row">
+        <% if(articles != null) { %>
+        <% articles.forEach(function(article, index) { %>
+        <div class="col-lg-3 col-md-5">
+          <div class="card space1">
+            <img src="<%- article.recipe.image %>" alt="<%- article.recipe.label %>">
+            <div class="card-body">
+              <h5 class="card-title"><%- article.recipe.label %></h5>
+
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="/<%-(article.recipe.uri).split('#')[1] %>" class="btn btn-primary">Go somewhere</a>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <% }) %>
+        <% } else { %>
+        No posts found.
+        <% } %>
+      </div>
+
+
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
